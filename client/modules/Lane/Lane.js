@@ -5,7 +5,7 @@ import Edit from '../../components/Edit';
 import styles from './Lane.css';
 
 const Lane = (props) => {
-  const { lane, laneNotes, updateLane, addNote, deleteLane, editLane  } = props;
+  const { lane, laneNotes, updateLane, addNote, deleteLane, editLane } = props;
   const laneId = lane.id;
 
   return (
@@ -25,7 +25,7 @@ const Lane = (props) => {
           <button onClick={() => deleteLane(laneId)}>Remove Lane</button>
         </div>
       </div>
-      <NotesContainer
+      <NoteContainer
         notes={laneNotes}
         laneId={laneId}
       />
