@@ -6,11 +6,9 @@ import { compose } from 'redux';
 import { DropTarget } from 'react-dnd';
 import ItemTypes from '../Kanban/itemTypes';
 
-const mapStateToProps = (state, ownProps) => {
-  return {
-    laneNotes: ownProps.lane.notes.map(noteId => state.notes[noteId]),
-  };
-};
+const mapStateToProps = (state, ownProps) => ({
+  laneNotes: ownProps.lane.notes.map(noteId => state.notes[noteId]),
+});
 
 const noteTarget = {
   hover(targetProps, monitor) {
