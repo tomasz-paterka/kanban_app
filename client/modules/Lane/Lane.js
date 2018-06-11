@@ -40,7 +40,6 @@ Lane.propTypes = {
   updateLane: PropTypes.func,
   deleteLane: PropTypes.func,
   editLane: PropTypes.func,
-  connectDropTarget: PropTypes.any,
 };
 
 export default Lane;
