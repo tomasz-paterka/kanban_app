@@ -63,7 +63,7 @@ export function deleteNoteRequest(noteId, laneId) {
   };
 }
 
-export function editLane(noteId) {
+export function editNote(noteId) {
   return {
     type: EDIT_NOTE,
     noteId,

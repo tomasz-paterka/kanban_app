@@ -28,7 +28,6 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = {
   createLane: createLaneRequest,
-  fetchLanes,
 };
 
 export default compose(
